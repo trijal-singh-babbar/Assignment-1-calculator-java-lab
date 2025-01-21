@@ -5,37 +5,51 @@ class Calculator
 	double[] numbers;
 	int n;
 	int[] arr;
+	
+	//function to input numbers for calculator
 	void takeInput()
 	{
 		UserInput input = new UserInput();
 		numbers = input.userInput();
 	}
+	
+	//function to add 2 numbers
 	double addingNumbers()
 	{		
 		double sum = numbers[0] + numbers[1];
 		return sum;
 	}
+	
+	//function to find difference between 2 numbers
 	double subtractingNumbers()
 	{
 		double diff = numbers[0] - numbers[1];
 		return diff;
 	}
+	
+	//function to divide 2 numbers
 	double dividingNumbers()
 	{
 		double quotient = numbers[0] / numbers[1];
 		return quotient;
 	}
+	
+	//function to multiply 2 numbers
 	double multiplyingNumbers()
 	{
 		double prod = numbers[0] * numbers[1];
 		return prod;
 	}
+	
+	//function to input number of terms for fibonacci series
 	int noOfTerms()
 	{
 		UserInput inp = new UserInput();
 		n = inp.fibLimit();
 		return n;
 	}
+	
+	//function to print fibonacci series
 	void printFibonacciSeries(int n)
 	{
         int firstTerm = 0, secondTerm = 1;
@@ -53,12 +67,16 @@ class Calculator
         }
 		System.out.println();
 	}
+	
+	//function to enter array
 	void arrInput()
 	{
 		UserInput arinput = new UserInput();
 		n = arinput.arrayLength();
 		arr = arinput.arrayInput(n);
 	}
+	
+	//function to calculate sum and mean of array
 	void arrayDetails()
 	{
 		int sum = 0;

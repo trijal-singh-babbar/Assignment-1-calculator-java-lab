@@ -4,6 +4,7 @@ import java.util.*;
 class UserInput
 {
 	int len;
+	// function to take input for calculator
 	double[] userInput()
 	{
 		Scanner sc = new Scanner(System.in);
@@ -18,6 +19,7 @@ class UserInput
 		return numbers;
 	}
 	
+	//function to take the number of terms for fibonacci series
 	int fibLimit()
 	{
 		Scanner sc = new Scanner(System.in);
@@ -26,6 +28,7 @@ class UserInput
 		return n;
 	}
 	
+	//function to take the number of terms in an array
 	int arrayLength()
 	{
 		Scanner sc = new Scanner(System.in);
@@ -34,6 +37,7 @@ class UserInput
 		return len;
 	}
 	
+	//function to enter array
 	int[] arrayInput(int len)
 	{
 		Scanner sc = new Scanner(System.in);
